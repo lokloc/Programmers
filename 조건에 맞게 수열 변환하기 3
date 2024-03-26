@@ -1,0 +1,10 @@
+function solution(arr, k) {
+    function double(x){
+        return x * k;
+    }
+    function add(q){
+        return q + k;
+    }
+    if(k%2==0) {return arr.map(add);}
+    else {return arr.map(double);}
+}
