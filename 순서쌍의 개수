@@ -1,0 +1,4 @@
+function solution(n) {
+    let arr = Array.from({length:n},(v,i)=>i+1)
+    return arr.filter(v=>n%v==0).length
+}
