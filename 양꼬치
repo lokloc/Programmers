@@ -1,0 +1,7 @@
+function solution(n, k) {
+    let discount = 0
+    let sheep = n*12000
+    let drink = k*2000
+    if(sheep>10)  discount = parseInt(n/10)
+    return sheep+drink-(discount*2000)
+}
