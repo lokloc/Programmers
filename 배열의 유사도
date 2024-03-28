@@ -1,0 +1,9 @@
+function solution(s1, s2) {
+    let regex = ""
+    for(let i=0; i<s1.length; i++){
+        if(i == s1.length-1) regex = regex + s1[i]
+        else regex = regex + s1[i] + "|"
+    }
+    let regix =  new RegExp(regex, 'g');
+    return s2.filter(v => !v.replace(regix, '')).length
+}
