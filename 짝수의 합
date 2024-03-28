@@ -1,0 +1,5 @@
+function solution(n) {
+    if(n==1) return 0
+    let arr = Array.from(new Array(n),(x,i)=>i+1)
+    return arr.filter(q=>q%2==0).reduce((t,y)=>t+y)
+}
