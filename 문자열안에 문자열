@@ -1,0 +1,5 @@
+function solution(str1, str2) {
+    const regex = new RegExp(`${str2}`, 'g');
+    const isInclude_str2 = s => regex.test(s)
+    return str1.includes(str2)?1:2
+}
