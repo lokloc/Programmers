@@ -1,0 +1,6 @@
+function solution(my_string) {
+    const isIncludeAlphabet = s => /a|e|i|o|u/g.test(s)
+    let result = my_string.split("")
+    my_string = result.filter(v=>!isIncludeAlphabet(v))
+    return my_string.join("")
+}
