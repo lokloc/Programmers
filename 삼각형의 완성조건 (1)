@@ -1,0 +1,8 @@
+function solution(sides) {
+    let maxLength = Math.max(...sides)
+    let maxidx = sides.indexOf(maxLength)
+    sides.splice(maxidx,1)
+    let sum = sides.reduce((i,v)=>i+v)
+    if(maxLength<sum) return 1
+    else return 2
+}
