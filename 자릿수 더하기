@@ -1,0 +1,4 @@
+function solution(n) {
+    const mapfn = (arg) => Number(arg);
+    return String(n).split('').map(mapfn).reduce((i,v)=>i+v);
+}
