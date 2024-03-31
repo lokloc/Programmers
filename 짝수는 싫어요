@@ -1,0 +1,4 @@
+function solution(n) {
+    let arr = Array.from(new Array(n), (x, i) => i + 1);
+    return arr.filter(v=> v%2!=0)
+}
