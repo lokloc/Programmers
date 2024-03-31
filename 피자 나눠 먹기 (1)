@@ -1,0 +1,11 @@
+function solution(n) {
+    let pizza = 7  
+    let eat = 7
+    if((pizza/n)>=1) return 1
+    let i = 1
+    while(eat<n){ //피자보다 사람이 많으면 한개추가 
+        i+=1
+        eat = pizza*i
+    }
+    return i
+}
