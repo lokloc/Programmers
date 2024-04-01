@@ -1,0 +1,9 @@
+function solution(myString) {
+    myString = myString.toUpperCase().split("")
+    for(let i=0;i<myString.length;i++){
+        if(myString[i]!="A"){
+             myString.splice(i,1,myString[i].toLowerCase())
+        }
+    }
+    return myString.join("")
+}
